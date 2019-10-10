@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformacion translate</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            perspective-origin: center;
+            background-color: rgba(252, 184, 184);
+            /* text-transform: uppercase; */
+        }
+
+        .container {
+            border: 2px solid white;
+            position: absolute;
+            left: 20%;
+            border-radius: 3px;
+        }
+
+        .container:hover .cuadrado {
+            transform: translate3d(-100px, -100px, -100px);
+
+
+        }
+
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            position: relative;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            font-weight: 500;
+            border-radius: 3px;
+
+        }
+
+        .container2 {
+            border: solid 1px black;
+            position: absolute;
+            border-radius: 5px;
+        }
+
+        .container2:hover .cuadrado2 {
+            /* transform: translate3d(100px, -100px, 100px); */
+            /* transform: translateY(-200px); */
+            transform: scale(1.3);
+            /* right: 20px; */
+
+        }
+
+        .cuadrado2 {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+            position: relative;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            font-weight: 500;
+            text-align: justify;
+            border-radius: 7px;
+            /* text-transform: uppercase; */
+
+
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: none;
+            color: black;
+            padding: 00px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            font-size: 16px;
+            text-align: center;
+
+        }
+
+        .btn:hover {
+            color: rgba(252, 184, 184);
+            border: solid pink 2px;
+        }
+
+
+        .container3 {
+            border: solid 2px white;
+            position: absolute;
+            right: 330px;
+            border-radius: 3px;
+        }
+
+        .container3:hover .cuadrado3 {
+            transform: translate3d(100px, -100px, 100px);
+        }
+
+        .cuadrado3 {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            position: relative;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            font-weight: 500;
+            border-radius: 3px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cuadrado">
+            Hola Mundo!
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="cuadrado2">
+            <h1>Sigueme en: <br>
+                <a target="_blank" class="btn" href="https://www.instagram.com/soyraffaello/?hl=es-la"> @soyraffaello
+                </a></h1>
+
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="cuadrado3">
+            Como están?
+        </div>
+    </div>
+
+</body>
+
+</html>
